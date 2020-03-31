@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/only-front_tool.scss"
+    ],
+    "names": [],
+    "file": "only-front_tool.css"
+}

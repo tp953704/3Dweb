@@ -1,0 +1,119 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* 微軟正黑體 */
+  font-family: "微軟雅黑體", "Helvetica", "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+}
+
+.BG {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/BG.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  height: 95%;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+
+.container .Tbox {
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.container .Tbox .cube {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+
+.container .Tbox .cube .side {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
+}
+
+.container .Tbox .cube .font {
+  background-color: #f7d986;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
+  transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
+}
+
+.container .Tbox .cube .left {
+  background-color: #aad0eb;
+  -webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
+  transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
+}
+
+.container .Tbox .cube .right {
+  background-color: #f3b8c8;
+  -webkit-transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
+}
+
+.container .Tbox .cube .top {
+  background-color: #afa4c9;
+  -webkit-transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
+  transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
+}
+
+.container .Tbox .cube .bottom {
+  background-color: #5fa6ab;
+  -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
+  transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
+}
+
+.container .Tbox .cube .back {
+  background-color: #e5b345;
+  -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
+  transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
+}
+
+.sm-text {
+  height: 5%;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.magicpen {
+  position: fixed;
+  z-index: 1003;
+  background: wheat;
+  border-radius: 50px;
+  mix-blend-mode: difference;
+  top: 200px;
+  left: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.d-none {
+  display: none;
+}
+/*# sourceMappingURL=only-myIndex.css.map */

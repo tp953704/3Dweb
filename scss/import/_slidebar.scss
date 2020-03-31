@@ -1,0 +1,40 @@
+.slidebar_menu_box{
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    background: linear-gradient(to bottom, $second-color 0%, $primary-color 100%);
+    color: $other-color;
+    z-index: 1003;
+    .slidebar_header{
+        display:inline-flex;
+        flex-direction:row-reverse;
+        height: 20vh;
+        width: 50vw;
+        background: linear-gradient(to bottom, $primary-color 0%, $second-color 100%);
+        .slidebar_header_item_close{
+            justify-content:flex-start;
+        }
+        .slidebar_header_item{
+            position: relative;
+            top:5vh;
+            width: 50vw;
+            left: 3vw;
+        }
+    }
+    .slidebar_list{
+        opacity: 0.7;
+        .slidebar_item{
+            padding: 3vh;
+            border-bottom: 1px $primary-color dashed;
+        }
+    }
+    @include sm-media{
+        display:none;
+    }
+    @include md-media{
+    }
+     @include lg-media{
+     
+    }
+    
+}

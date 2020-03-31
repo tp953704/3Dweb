@@ -1,100 +1,97 @@
-@charset "UTF-8";
-/*------------------------------字形------------------------------*/
-.page {
+.container {
+  display: block;
+  width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  direction: row;
+  -webkit-transform-origin: center;
+  transform-origin: center;
 }
 
-.page .page-left {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container .Tbox {
+  position: relative;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
 
-.page .page-left .page_icon {
-  height: 33rem;
-  width: 33rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FFE164), to(#70BCFD));
-  background: linear-gradient(to bottom, #FFE164 0%, #70BCFD 100%);
-  border-radius: 17rem;
+.container .Tbox .cube {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 40vh;
+  left: 40vw;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
-.page .page-left .page_name {
-  font-family: "Helvetica Neue";
-  color: #919191;
-  font-size: 1.6rem;
+.container .Tbox .cube .side {
+  display: inline-block;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  top: -10vw;
+  left: -10vw;
 }
 
-.page .page-left .page_name--C {
-  padding-top: 5rem;
+.container .Tbox .cube .font {
+  background-color: #f7d986;
+  -webkit-transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
+  transform: rotate3d(0, 0, 0, 0) translate3d(0, 0, 10vw);
 }
 
-.page .page-left .page_name--E {
-  padding-top: 1rem;
+.container .Tbox .cube .left {
+  background-color: #aad0eb;
+  -webkit-transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
+  transform: rotate3d(0, 1, 0, 90deg) translate3d(0vh, 0, 10vw);
 }
 
-.page .page-right {
-  height: 100%;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container .Tbox .cube .right {
+  background-color: #f3b8c8;
+  -webkit-transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
+  transform: rotate3d(0, 1, 0, -90deg) translate3d(0vh, 0, 10vw);
 }
 
-.page .page-right .page_icon {
-  height: 33rem;
-  width: 33rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FC7373), to(#847AFD));
-  background: linear-gradient(to bottom, #FC7373 0%, #847AFD 100%);
-  border-radius: 17rem;
+.container .Tbox .cube .top {
+  background-color: #afa4c9;
+  -webkit-transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
+  transform: rotate3d(1, 0, 0, 90deg) translate3d(0vh, 0vh, 10vw);
 }
 
-.page .page-right .page_name {
-  font-family: "Helvetica Neue";
-  color: #919191;
-  font-size: 1.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container .Tbox .cube .bottom {
+  background-color: #5fa6ab;
+  -webkit-transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
+  transform: rotate3d(1, 0, 0, -90deg) translate3d(0vh, 0vh, 10vw);
 }
 
-.page .page-right .page_name--C {
-  padding-top: 5rem;
+.container .Tbox .cube .back {
+  background-color: #e5b345;
+  -webkit-transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
+  transform: rotate3d(0, 0, 0, 0deg) translate3d(0, 0, -10vw);
 }
 
-.page .page-right .page_name--E {
-  padding-top: 1rem;
+.magicpen {
+  position: fixed;
+  z-index: 1003;
+  background: wheat;
+  border-radius: 50px;
+  mix-blend-mode: difference;
+  top: 200px;
+  left: 200px;
+  height: 50px;
+  width: 50px;
+}
+
+.LP {
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  z-index: 1005;
+  display: block;
+  height: 3px;
+  width: 9px;
+  border: opx black solid;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=only-index.css.map */

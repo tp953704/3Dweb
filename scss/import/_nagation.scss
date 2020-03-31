@@ -1,0 +1,57 @@
+.navigation{
+    position: fixed;
+    width: 100vw;
+    display: block;
+    background-color: $primary-color;
+    z-index: 1002;
+    opacity: 0.8;
+    padding: 15px;
+    .navigation_list{
+        color: $other-color;
+        .navigation_burger {
+            display: inline;
+            padding-right:45vw; 
+            @include sm-media {
+                display: none;
+            }
+            @include md-media {
+                padding-right:60vw; 
+            }
+            @include lg-media {
+                padding-right:70vw; 
+            }
+        }
+        .navigation_title{
+            display: none;
+            padding-right:45vw; 
+            @include sm-media {
+                display: inline;
+            }
+            @include md-media {
+                padding-right:60vw; 
+            }
+            @include lg-media {
+                padding-right:70vw; 
+            }
+        }
+        .navigation_item{
+            display:inline-block;
+            padding: 1vw;
+        }
+        .navigation_icon{
+            display:inline-block;
+            padding: 1vw;
+        }
+       
+    }
+    @include sm-media{
+        
+     }
+     @include md-media{
+         background: linear-gradient(to right, $second-color 0%, $primary-color 100%);
+     }
+     @include lg-media{
+     
+     }
+    
+}

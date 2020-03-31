@@ -1,0 +1,24 @@
+.footer{
+    display:block;
+    position: fixed;
+    top:92vh;
+    height: 8vh;
+    width: 100vw;
+    background:linear-gradient(to right, $second-color 0%, $primary-color 100%);  
+    @include sm-media {
+           
+    }
+    @include md-media {
+    
+    }
+    @include lg-media {
+           
+    } 
+    .footer_text{
+        position: absolute;
+        left:40vw;
+        color: $other-color;
+        line-height: 8vh;
+        // vertical-align:middle;
+    }
+}

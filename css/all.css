@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*------------------------------字形------------------------------*/
 .title-text {
   line-height: 2vw;
   font-size: 2vw;
@@ -67,16 +65,190 @@ blockquote, q {
   quotes: "" "";
 }
 
+.icon_primary {
+  background-image: url(../../images/care.svg);
+  background-color: white;
+}
+
+.icon_user {
+  background-image: url(../../images/man-user.svg);
+  background-color: white;
+}
+
+.icon_menu {
+  background-image: url(../../images/menu_icon.svg);
+}
+
+.icon_home {
+  background-image: url(../../images/house.svg);
+}
+
+.icon_close {
+  background-image: url(../../images/close.svg);
+}
+
+.icon {
+  text-indent: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: -.1rem;
+  margin-right: .372rem;
+  width: 1.563rem;
+  height: 1.363rem;
+  color: white;
+}
+
+.footer {
+  display: block;
+  position: fixed;
+  top: 92vh;
+  height: 8vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, right top, from(#ffc168), to(#ff6c5f));
+  background: linear-gradient(to right, #ffc168 0%, #ff6c5f 100%);
+}
+
+.footer .footer_text {
+  position: absolute;
+  left: 40vw;
+  color: white;
+  line-height: 8vh;
+}
+
+.navigation {
+  position: fixed;
+  width: 100vw;
+  display: block;
+  background-color: #ff6c5f;
+  z-index: 1002;
+  opacity: 0.8;
+  padding: 15px;
+}
+
+.navigation .navigation_list {
+  color: white;
+}
+
+.navigation .navigation_list .navigation_burger {
+  display: inline;
+  padding-right: 45vw;
+}
+
+@media (min-width: 576px) {
+  .navigation .navigation_list .navigation_burger {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation .navigation_list .navigation_burger {
+    padding-right: 60vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation .navigation_list .navigation_burger {
+    padding-right: 70vw;
+  }
+}
+
+.navigation .navigation_list .navigation_title {
+  display: none;
+  padding-right: 45vw;
+}
+
+@media (min-width: 576px) {
+  .navigation .navigation_list .navigation_title {
+    display: inline;
+  }
+}
+
+@media (min-width: 768px) {
+  .navigation .navigation_list .navigation_title {
+    padding-right: 60vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation .navigation_list .navigation_title {
+    padding-right: 70vw;
+  }
+}
+
+.navigation .navigation_list .navigation_item {
+  display: inline-block;
+  padding: 1vw;
+}
+
+.navigation .navigation_list .navigation_icon {
+  display: inline-block;
+  padding: 1vw;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    background: -webkit-gradient(linear, left top, right top, from(#ffc168), to(#ff6c5f));
+    background: linear-gradient(to right, #ffc168 0%, #ff6c5f 100%);
+  }
+}
+
+.slidebar_menu_box {
+  position: fixed;
+  height: 100vh;
+  width: 50vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffc168), to(#ff6c5f));
+  background: linear-gradient(to bottom, #ffc168 0%, #ff6c5f 100%);
+  color: white;
+  z-index: 1003;
+}
+
+.slidebar_menu_box .slidebar_header {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 20vh;
+  width: 50vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff6c5f), to(#ffc168));
+  background: linear-gradient(to bottom, #ff6c5f 0%, #ffc168 100%);
+}
+
+.slidebar_menu_box .slidebar_header .slidebar_header_item_close {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.slidebar_menu_box .slidebar_header .slidebar_header_item {
+  position: relative;
+  top: 5vh;
+  width: 50vw;
+  left: 3vw;
+}
+
+.slidebar_menu_box .slidebar_list {
+  opacity: 0.7;
+}
+
+.slidebar_menu_box .slidebar_list .slidebar_item {
+  padding: 3vh;
+  border-bottom: 1px #ff6c5f dashed;
+}
+
+@media (min-width: 576px) {
+  .slidebar_menu_box {
+    display: none;
+  }
+}
+
 .displayNone {
   display: none;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
-html {
-  font-size: calc( 12px + (6/(1920 - 1024)*(100vw - 1024px)));
 }
 /*# sourceMappingURL=all.css.map */
