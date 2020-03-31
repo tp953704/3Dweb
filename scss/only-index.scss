@@ -1,0 +1,62 @@
+@import './import/var';
+
+.page{
+    height: 100%;
+    display: flex;
+    direction: row;
+    .page-left {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .page_icon{
+            height: 33rem;
+            width: 33rem;
+            background: linear-gradient(to bottom,$lemon-yellow 0%,$sky-blue 100%);
+            border-radius: 17rem;
+        }
+        .page_name{
+            font-family: "Helvetica Neue";
+            color:$sadding-gray;
+            font-size: 1.6rem;
+            &--C{
+                padding-top: 5rem;
+            }
+            &--E{
+                padding-top: 1rem;
+            }
+        }
+    
+    }
+    .page-right {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .page_icon{
+            height: 33rem;
+            width: 33rem;
+            background: linear-gradient(to bottom,$love-red 0%,$romantic-blue 100%);
+            border-radius: 17rem;
+        }
+        .page_name{
+            font-family: $font-family;
+            color:$sadding-gray;
+            font-size: 1.6rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--C{
+                padding-top: 5rem;
+            }
+            &--E{
+                padding-top: 1rem;
+            }
+        }
+        
+    }
+}

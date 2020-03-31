@@ -1,0 +1,18 @@
+@import "import/_var.scss";
+@import "import/_text.scss";
+@import "mixin/_mixins.scss";
+@import "import/_reset.scss"; 
+@import "./import/_icon.scss";
+@import "./import/_nagation.scss";
+
+.displayNone{
+    display: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+html{
+    //rem範圍是12-18px
+    font-size: calc( 12px + (6/(1920 - 1024)*(100vw - 1024px)));
+}

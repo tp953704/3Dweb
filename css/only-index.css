@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*------------------------------字形------------------------------*/
+.page {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: row;
+}
+
+.page .page-left {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .page-left .page_icon {
+  height: 33rem;
+  width: 33rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFE164), to(#70BCFD));
+  background: linear-gradient(to bottom, #FFE164 0%, #70BCFD 100%);
+  border-radius: 17rem;
+}
+
+.page .page-left .page_name {
+  font-family: "Helvetica Neue";
+  color: #919191;
+  font-size: 1.6rem;
+}
+
+.page .page-left .page_name--C {
+  padding-top: 5rem;
+}
+
+.page .page-left .page_name--E {
+  padding-top: 1rem;
+}
+
+.page .page-right {
+  height: 100%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .page-right .page_icon {
+  height: 33rem;
+  width: 33rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FC7373), to(#847AFD));
+  background: linear-gradient(to bottom, #FC7373 0%, #847AFD 100%);
+  border-radius: 17rem;
+}
+
+.page .page-right .page_name {
+  font-family: "Helvetica Neue";
+  color: #919191;
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page .page-right .page_name--C {
+  padding-top: 5rem;
+}
+
+.page .page-right .page_name--E {
+  padding-top: 1rem;
+}
+/*# sourceMappingURL=only-index.css.map */
