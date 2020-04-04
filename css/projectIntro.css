@@ -1,0 +1,26 @@
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.Background {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #1b0342;
+}
+
+.Background .Info_introduce {
+  height: 12rem;
+  background-color: #4b2f77;
+}
+/*# sourceMappingURL=projectIntro.css.map */

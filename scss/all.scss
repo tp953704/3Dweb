@@ -9,3 +9,7 @@
 .displayNone{
     display: none;
 }
+:root{
+    //rem範圍是13-19px
+    font-size: calc( 13px + (6/(1920 - 1024)*(100vw - 1024px)));
+}

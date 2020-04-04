@@ -1,0 +1,27 @@
+html{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 100%;
+}
+body{
+    overflow: hidden;
+}
+.Background{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1b0342;
+    .Info_introduce{
+        height: 12rem;
+        background-color: #4b2f77;
+        .introduce{
+            .introduce_key{
+    
+            }
+            .introduce_content{
+    
+            }
+        }
+    }
+    
+}
